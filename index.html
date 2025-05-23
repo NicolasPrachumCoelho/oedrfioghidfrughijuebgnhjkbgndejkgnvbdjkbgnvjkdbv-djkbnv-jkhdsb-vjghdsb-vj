@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festejando a Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Conexão entre o Campo e a Cidade</h1>
+    <nav>
+      <button id="btnTema1">O Campo Produz, A Cidade Consome</button>
+      <button id="btnTema2">Valorização Cultural</button>
+      <button id="btnTema3">Educação e Conscientização</button>
+      <button id="btnTema4">Festejar é Unir</button>
+      <button id="btnVantagens">Vantagens</button>
+      <button id="btnQuiz">Quiz</button>
+      <button id="btnSobre">Sobre</button>
+      <button id="btnJogo">Jogo</button>
+    </nav>
+  </header>
+  <div id="text-container">
+  </div>
+  <div id="canvas-container">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Campo Produz, a Cidade Consome</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+  <header class="bg-green-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold">O Campo Produz, a Cidade Consome</h1>
+    <p class="mt-2 text-lg">Uma conexão essencial entre duas realidades</p>
+  </header>
+
+  <main class="px-4 py-10 space-y-20">
+
+    <section class="max-w-4xl mx-auto" id="secao1">
+      <h2 class="text-3xl font-bold mb-4">A importância do campo na produção de alimentos</h2>
+      <p class="text-lg leading-relaxed">
+        O campo é responsável pela produção dos alimentos que abastecem diariamente a mesa das famílias que vivem na cidade. Graças ao trabalho dos agricultores, temos acesso a frutas, verduras, grãos, leite, carne e outros alimentos essenciais.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Embrapa - Empresa Brasileira de Pesquisa Agropecuária</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao2">
+      <h2 class="text-3xl font-bold mb-4">O papel da cidade no consumo e valorização</h2>
+      <p class="text-lg leading-relaxed">
+        A cidade consome o que o campo produz e, ao mesmo tempo, deve valorizar esse trabalho. Quando compramos produtos locais e frescos, estamos fortalecendo o pequeno produtor rural e incentivando a economia sustentável.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao3">
+      <h2 class="text-3xl font-bold mb-4">Conexão necessária para o futuro</h2>
+      <p class="text-lg leading-relaxed">
+        Promover a integração entre campo e cidade é essencial para um futuro mais justo e sustentável. A educação, a conscientização e o respeito mútuo entre esses dois espaços sociais são fundamentais para garantir qualidade de vida a todos.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Instituto Federal do Paraná - IFPR</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="galeria">
+      <h2 class="text-3xl font-bold mb-6 text-center">Imagens Relacionadas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow p-4">
+          <img src="campo.jpg" alt="Imagem do campo" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://pxhere.com/pt/photo/129058?utm_content=shareClip&utm_medium
+            =referral&utm_source=pxhere</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="fotodacidade.jpg" alt="Imagem da cidade" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://upload.wikimedia.org/wikipedia/co
+mmons/3/3b/FOTOS_DA_CIDADE_DE_SAN
+TA_TEREZINHA_-_PE.jpg</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="feiraurbana.jpg" alt="Feira urbana" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://upload.wikimedia.org/wikipedia/co
+mmons/5/5f/Feira_Livre_%28Largo_da_Epa
+tur%2C_Porto_Alegre%2C_Brasil%29_1.jpg</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-green-700 text-white text-center py-4 mt-10">
+    <p>&copy; Desenvolvido por Nicolas Prachum Coelho</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('#secao1', { delay: 200, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao2', { delay: 400, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao3', { delay: 600, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#galeria', { delay: 800, distance: '50px', origin: 'bottom' });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educação e Conscientização - Campo e Cidade</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <style>
+    input[type='file']::file-selector-button {
+      background-color: #38a169;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+  <header class="bg-green-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold">Educação e Conscientização</h1>
+    <p class="mt-2 text-lg">União entre campo e cidade para um futuro melhor</p>
+  </header>
+
+  <main class="px-4 py-10 space-y-20">
+
+    <section class="max-w-4xl mx-auto" id="secao1">
+      <h2 class="text-3xl font-bold mb-4">Educar para valorizar</h2>
+      <p class="text-lg leading-relaxed">
+        A educação é a base para que crianças e jovens compreendam a importância do campo na vida urbana. Incentivar o conhecimento sobre a produção de alimentos e o respeito ao meio rural fortalece a empatia e o reconhecimento mútuo.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Ministério da Educação - MEC</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao2">
+      <h2 class="text-3xl font-bold mb-4">Conscientizar para preservar</h2>
+      <p class="text-lg leading-relaxed">
+        A conscientização sobre os desafios enfrentados tanto no campo quanto na cidade é fundamental para promover ações sustentáveis. Reciclagem, preservação da água e valorização da produção local devem fazer parte do cotidiano de todos.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - INEP</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao3">
+      <h2 class="text-3xl font-bold mb-4">Juntos por um futuro melhor</h2>
+      <p class="text-lg leading-relaxed">
+        Unir campo e cidade por meio da educação e da conscientização gera cidadãos mais informados, solidários e preparados para transformar a realidade. É na troca de saberes que construímos uma sociedade equilibrada e justa.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Instituto Federal do Paraná - IFPR</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="galeria">
+      <h2 class="text-3xl font-bold mb-6 text-center">Imagens Relacionadas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow p-4">
+          <img src="educacaonocampo.jpg" alt="Educação no campo" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://pxhere.com/pt/photo/606512?utm_content=shareClip&utm_medium=re
+            ferral&utm_source=pxhere</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="Conscientizaçãourbana.jpg" alt="Conscientização urbana" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://commons.wikimedia.org/wiki/File:
+            EsgotoCeuAbertoValterCampanatoAgenci
+            aBrasil.jpg</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="Uniãoentrecampoecidade.jpg" alt="União entre campo e cidade" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://commons.wikimedia.org/wiki/File
+            :INTER-RELA%C3%87%C3%83O_ENTRE_O_CAM
+            PO_E_A_CIDADE_01.jpg</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-green-700 text-white text-center py-4 mt-10">
+    <p>&copy; Desenvolvido por Nicolas Prachum Coelho</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('#secao1', { delay: 200, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao2', { delay: 400, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao3', { delay: 600, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#galeria', { delay: 800, distance: '50px', origin: 'bottom' });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festejar é Unir</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <style>
+    input[type='file']::file-selector-button {
+      background-color: #38a169;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+  <header class="bg-green-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold">Festejar é Unir</h1>
+    <p class="mt-2 text-lg">Celebrando a união entre campo e cidade</p>
+  </header>
+
+  <main class="px-4 py-10 space-y-20">
+
+    <section class="max-w-4xl mx-auto" id="secao1">
+      <h2 class="text-3xl font-bold mb-4">Festas do Campo</h2>
+      <p class="text-lg leading-relaxed">
+        As festas tradicionais do campo, como as festas juninas, colheitas e cavalgadas, são momentos em que a comunidade celebra a cultura, a fé e o trabalho coletivo. São ocasiões que fortalecem os laços entre vizinhos e valorizam as raízes rurais.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Cultura Popular Brasileira - IFPR</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao2">
+      <h2 class="text-3xl font-bold mb-4">Festas na Cidade</h2>
+      <p class="text-lg leading-relaxed">
+        Nas cidades, as festas regionais, feiras e eventos culturais também são espaços de integração, onde tradições do campo são apresentadas e valorizadas. Esses eventos ajudam a construir pontes culturais entre populações urbanas e rurais.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Secretaria de Cultura do Paraná</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao3">
+      <h2 class="text-3xl font-bold mb-4">Festejar é Unir</h2>
+      <p class="text-lg leading-relaxed">
+        As festas são oportunidades únicas de reunir pessoas de diferentes origens, compartilhando costumes, comidas típicas, danças e histórias. Festejar é um ato de união que fortalece a identidade de um povo e promove respeito entre campo e cidade.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Revista Educação e Cultura</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="galeria">
+      <h2 class="text-3xl font-bold mb-6 text-center">Imagens Relacionadas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow p-4">
+          <img src="festanocampo.jpg" alt="Festa no campo" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://upload.wikimedia.org/wikipedia/co
+mmons/1/16/Brion_-_Festa_de_Santa_Minia_2014_-_04_-_Campo_da_festa.jpg</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="eventonacidade.jpg" alt="Evento na cidade" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://pxhere.com/pt/photo/1438163?utm_content=shareClip&utm_medium
+=referral&utm_source=pxhere</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="festacidadeecampo.jpg" alt="União nas festas" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://pxhere.com/pt/photo/164578?utm_content=shareClip&utm_medium
+=referral&utm_source=pxhere</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-green-700 text-white text-center py-4 mt-10">
+    <p>&copy; Desenvolvido por Nicolas Prachum Coelho</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('#secao1', { delay: 200, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao2', { delay: 400, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao3', { delay: 600, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#galeria', { delay: 800, distance: '50px', origin: 'bottom' });
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Campo e Cidade Conectados</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>🌾🏙️ Campo e Cidade Conectados</h1>
+    <p>Clique no botão para ver as trocas entre o campo e a cidade.</p>
+  </div>
+
+  <div class="canvas-container" id="sketch-holder"></div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="sketch.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Quiz: Campo e Cidade</h1>
+      <div id="quiz-container"></div>
+      <button id="dica-btn">Mostrar Dica</button>
+      <p id="dica-texto"></p>
+      <p id="mensagem"></p>
+    </main>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créditos</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      background: linear-gradient(-45deg, #3a7bd5, #00d2ff, #7ed957, #00c9a7);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .credits, .objectives {
+      margin: 20px 0;
+    }
+
+    .objective-item {
+      margin: 5px 0;
+      text-align: left;
+    }
+
+    .menu-button {
+      background-color: #3498db;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .menu-button:hover {
+      background-color: #2980b9;
+      transform: scale(1.1);
+    }
+
+    .button-container {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Créditos</h1>
+
+    <div class="credits">
+      <p><strong>Orientadora:</strong> Regiane Heil Plem</p>
+      <p><strong>Desenvolvedor:</strong> Nicolas Prachum Coelho</p>
+    </div>
+
+    <div class="objectives">
+      <h2>Objetivos</h2>
+      <div class="objective-item">1. Entender como o campo e a cidade se ajudam.</div>
+      <div class="objective-item">2. Valorizar as tradições do campo e da cidade.</div>
+      <div class="objective-item">3. Aprender brincando sobre essa conexão.</div>
+    </div>
+
+    <div class="button-container">
+      <!-- Substitua os href pelos links corretos -->
+      <a href="https://editor.p5js.org/NicolasPrachumCoelho/full/NlfiUgr49" class="menu-button">Voltar</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
