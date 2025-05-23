@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educação e Conscientização - Campo e Cidade</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <style>
+    input[type='file']::file-selector-button {
+      background-color: #38a169;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+  <header class="bg-green-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold">Educação e Conscientização</h1>
+    <p class="mt-2 text-lg">União entre campo e cidade para um futuro melhor</p>
+  </header>
+
+  <main class="px-4 py-10 space-y-20">
+
+    <section class="max-w-4xl mx-auto" id="secao1">
+      <h2 class="text-3xl font-bold mb-4">Educar para valorizar</h2>
+      <p class="text-lg leading-relaxed">
+        A educação é a base para que crianças e jovens compreendam a importância do campo na vida urbana. Incentivar o conhecimento sobre a produção de alimentos e o respeito ao meio rural fortalece a empatia e o reconhecimento mútuo.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Ministério da Educação - MEC</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao2">
+      <h2 class="text-3xl font-bold mb-4">Conscientizar para preservar</h2>
+      <p class="text-lg leading-relaxed">
+        A conscientização sobre os desafios enfrentados tanto no campo quanto na cidade é fundamental para promover ações sustentáveis. Reciclagem, preservação da água e valorização da produção local devem fazer parte do cotidiano de todos.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - INEP</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="secao3">
+      <h2 class="text-3xl font-bold mb-4">Juntos por um futuro melhor</h2>
+      <p class="text-lg leading-relaxed">
+        Unir campo e cidade por meio da educação e da conscientização gera cidadãos mais informados, solidários e preparados para transformar a realidade. É na troca de saberes que construímos uma sociedade equilibrada e justa.
+      </p>
+      <p class="text-sm mt-4 text-gray-500">Fonte: Instituto Federal do Paraná - IFPR</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto" id="galeria">
+      <h2 class="text-3xl font-bold mb-6 text-center">Imagens Relacionadas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow p-4">
+          <img src="educacaonocampo.jpg" alt="Educação no campo" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://pxhere.com/pt/photo/606512?utm_content=shareClip&utm_medium=re
+            ferral&utm_source=pxhere</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="Conscientizaçãourbana.jpg" alt="Conscientização urbana" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://commons.wikimedia.org/wiki/File:
+            EsgotoCeuAbertoValterCampanatoAgenci
+            aBrasil.jpg</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="Uniãoentrecampoecidade.jpg" alt="União entre campo e cidade" class="w-full h-48 object-cover rounded mb-2">
+          <p class="text-sm text-gray-500">Fonte: https://commons.wikimedia.org/wiki/File
+            :INTER-RELA%C3%87%C3%83O_ENTRE_O_CAM
+            PO_E_A_CIDADE_01.jpg</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-green-700 text-white text-center py-4 mt-10">
+    <p>&copy; Desenvolvido por Nicolas Prachum Coelho</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('#secao1', { delay: 200, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao2', { delay: 400, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#secao3', { delay: 600, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('#galeria', { delay: 800, distance: '50px', origin: 'bottom' });
+  </script>
+</body>
+</html>
